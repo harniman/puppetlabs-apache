@@ -78,7 +78,7 @@ describe 'apache::vhost define', :unless => UNSUPPORTED_PLATFORMS.include?(fact(
         }
 
         apache::vhost { 'first.example.com':
-          port    => '80',
+          port    => '81',
           docroot => '/var/www/first',
           require => File['#{$run_dir}'],
         }
